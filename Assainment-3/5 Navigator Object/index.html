@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Object</title>
+</head>
+<body>
+    <h2>The Navigator Object</h2>
+    <p>Detects the user's browser name and version using the navigator object.</p>
+    <p id="browserName"></p>
+    <p id="version"></p>
+    <button onclick="navigatorName()">click me</button>
+
+   
+    <script>
+        function navigatorName(){
+        document.getElementById("browserName").innerHTML = "navigator.browserName is: " + navigator.appName;
+
+        document.getElementById("version").innerHTML = "navigator.version is: " + navigator.appVersion;
+    }
+    </script>
+        
+</body>
+</html>

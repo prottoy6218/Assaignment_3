@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Post Request</title>
+</head>
+<body>
+    <h1>Send json throug ajax posts</h1>
+
+    <script>
+        const toSend = {
+            name: "John Doe",
+            email: "johndoe@example.com"
+        };
+
+        const jsonString = JSON.stringify(toSend);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("POST", "https://api.example.com/submit");
+        xhr.setRequestHeader("ContentType", "application/json");
+        xhr.send(jsonString);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YYYY-MM-DD</title>
+</head>
+<body>
+    <h2>Display the day of the week for the current date</h2>
+
+    <p id = 'today'></p>
+
+    <script>
+        var today = new Date().getFullYear()+'-'+("0"+(new Date().getMonth()+1)).slice(-2)+'-'+("0"+new Date().getDate()).slice(-2)
+        document.getElementById("today").innerHTML = today
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse over</title>
+</head>
+<body>
+    <h2>Changing image onmouseover & onmouseout</h2>
+    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681" id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+
+    <script>
+        function mouseOver(){
+            document.getElementById('demo').src = "https://www.ctvnews.ca/polopoly_fs/1.4037876!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg"
+        }
+
+        function mouseOut(){
+            document.getElementById('demo').src = "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681"
+        }
+    </script>
+</body>
+</html>
